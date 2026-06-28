@@ -1,14 +1,14 @@
         let list = [];
 
-        function addlist() {
+        function addList() {
             let value = document.getElementById("input").value;
 
             list.push(value);
 
-            showlist();
+            showList();
         }
 
-        function showlist() {
+        function showList() {
             let text = ""
             for(let i = 0; i < list.length ; i++) {
                 text += `${list[i]} <button onclick="deletelist(${i})">delete</button><br>`;
@@ -17,7 +17,7 @@
                 document.getElementById("output").innerHTML = text;
         }
 
-        function deletelist(index) {
+        function deleteList(index) {
             list.splice(index, 1);
             showlist();
         }

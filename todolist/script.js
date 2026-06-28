@@ -20,5 +20,4 @@
         function deletelist(index) {
             list.splice(index, 1);
             showlist();
-
         }
